@@ -1,0 +1,8 @@
+.row { display: flex; gap: 40px; align-items: flex-start; }
+.box {
+  width: 200px;
+  background: #4a90d9;
+  color: #fff;
+  border: 8px solid #e8863a;
+}
+.label { font-family: sans-serif; margin-bottom: 8px; }
