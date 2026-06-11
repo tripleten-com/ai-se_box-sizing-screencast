@@ -14,24 +14,18 @@
   font-display: swap;
 }
 
-.row {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
+.wrapper {
+  background: #f48e00;          /* margin area (yellow) */
+  display: inline-block;
   font-family: "Suisse Intl", sans-serif;
-  color: #1a1a1a;
 }
 
 .box {
-  width: 200px;
-  background: #1878dc;       /* blue (primary action) */
-  color: #ffffff;
-  border: 8px solid #d35722; /* orange (errors/warnings) */
+  background: #328f51;          /* padding area (green) */
 }
 
-.label {
-  font-family: "Suisse Intl", sans-serif;
-  font-size: 14px;           /* captions/labels */
-  color: rgb(0 0 0 / 0.5);  /* secondary text */
-  margin-bottom: 8px;
+.box .content {
+  background: #1878dc;          /* content (blue) */
+  color: #ffffff;
+  font-size: 18px;
 }
