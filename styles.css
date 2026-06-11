@@ -14,18 +14,33 @@
   font-display: swap;
 }
 
-.wrapper {
-  background: #f48e00;          /* margin area (yellow) */
-  display: inline-block;
+.row {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
   font-family: "Suisse Intl", sans-serif;
+  color: #1a1a1a;
+}
+
+.ruler {
+  position: absolute;
+  left: 200px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #de4c45;
 }
 
 .box {
-  background: #328f51;          /* padding area (green) */
+  width: 200px;
+  background: #1878dc;
+  color: #ffffff;
+  border: 8px solid #d35722;
 }
 
-.box .content {
-  background: #1878dc;          /* content (blue) */
-  color: #ffffff;
-  font-size: 18px;
+.label {
+  font-size: 14px;
+  color: rgb(0 0 0 / 0.5);
+  margin-bottom: 8px;
 }
