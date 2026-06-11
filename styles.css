@@ -1,8 +1,37 @@
-.row { display: flex; gap: 40px; align-items: flex-start; }
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("https://d2jcw3k6onjdla.cloudfront.net/fonts/suisse/SuisseIntl-Regular-WebM.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("https://d2jcw3k6onjdla.cloudfront.net/fonts/suisse/SuisseIntl-SemiBold-WebM.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  font-family: "Suisse Intl", sans-serif;
+  color: #1a1a1a;
+}
+
 .box {
   width: 200px;
-  background: #4a90d9;
-  color: #fff;
-  border: 8px solid #e8863a;
+  background: #1878dc;       /* blue (primary action) */
+  color: #ffffff;
+  border: 8px solid #d35722; /* orange (errors/warnings) */
 }
-.label { font-family: sans-serif; margin-bottom: 8px; }
+
+.label {
+  font-family: "Suisse Intl", sans-serif;
+  font-size: 14px;           /* captions/labels */
+  color: rgb(0 0 0 / 0.5);  /* secondary text */
+  margin-bottom: 8px;
+}
