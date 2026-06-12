@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Suisse Intl";
-  src: url("https://d2jcw3k6onjdla.cloudfront.net/fonts/suisse/SuisseIntl-Regular-WebM.woff2") format("woff2");
+  src: url("https://d2jcw3k6onjdla.cloudfront.net/fonts/suisse/SuisseIntl-Regular-WebM.woff2")
+    format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +9,8 @@
 
 @font-face {
   font-family: "Suisse Intl";
-  src: url("https://d2jcw3k6onjdla.cloudfront.net/fonts/suisse/SuisseIntl-SemiBold-WebM.woff2") format("woff2");
+  src: url("https://d2jcw3k6onjdla.cloudfront.net/fonts/suisse/SuisseIntl-SemiBold-WebM.woff2")
+    format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -23,20 +25,31 @@
   color: #1a1a1a;
 }
 
-.ruler {
-  position: absolute;
-  left: 200px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #de4c45;
+/* Measurement bracket: always spans 200px from the box's left edge,
+   regardless of how wide the box itself renders. */
+.measure {
+  box-sizing: border-box;
+  width: 200px;
+  height: 10px;
+  margin-top: 10px;
+  border: 2px solid #de4c45;
+  border-top: none;
+}
+
+.measure-label {
+  /* Match the bracket width so the label stays centered under it
+     even when the box above grows wider. */
+  width: 200px;
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #de4c45;
+  text-align: center;
 }
 
 .box {
   width: 200px;
   background: #1878dc;
   color: #ffffff;
-  border: 8px solid #d35722;
 }
 
 .label {
